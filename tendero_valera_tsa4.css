@@ -33,7 +33,7 @@ body {
 }
 
 .image {
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bbf58a6-1e85-4cfe-83fd-02df6f482b45/de8nlib-6bed7b3d-3d7e-4763-bb60-18f5ee0127fd.png/v1/fill/w_1024,h_652,q_80,strp/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUyIiwicGF0aCI6IlwvZlwvNWJiZjU4YTYtMWU4NS00Y2ZlLTgzZmQtMDJkZjZmNDgyYjQ1XC9kZThubGliLTZiZWQ3YjNkLTNkN2UtNDc2My1iYjYwLTE4ZjVlZTAxMjdmZC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZVgNGi61AOkC068E-wphWmAUW8amj0MiJySqDcMCVh8);
+    background-image: url(bg2.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +95,6 @@ img {
 
 .name {
     color: aliceblue;
-    ;
     text-shadow: 2px 2px 2px 2px;
     text-align: center;
 }
@@ -108,49 +107,49 @@ img {
 .grass {
     background-color: rgb(22, 203, 22);
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .poison {
     background-color: darkorchid;
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .rock {
     background-color: rgb(173, 128, 15);
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .ghost {
     background-color: rgb(71, 11, 104);
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .normal {
     background-color: rgb(106, 106, 117);
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .fire {
     background-color: red;
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .fighting {
     background-color: rgb(253, 219, 23);
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .ground {
     background-color: rgb(107, 61, 31);
     border-radius: 2px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .flying{
@@ -175,13 +174,13 @@ img {
 .add {
     background-color: rgb(135, 135, 228);
     border-radius: 5px;
-    padding: 3px;
+    padding: 15px;
 }
 
 .release {
     background-color: rgb(228, 135, 140);
     border-radius: 5px;
-    padding: 3px;
+    padding: 15px;
 }
 
 p {
