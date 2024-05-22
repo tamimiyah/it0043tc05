@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch';
+}
+
+body {
+    background-image: url("7941359.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: aliceblue;
+    text-align: center;
+}
+
+.container {
+    margin: 2vw 3vw 2vw 3vw;
+    vertical-align: top;
+}
+
+.card1 {
+    width: 25vw;
+    border: 2px solid rgb(5, 5, 5);
+    box-shadow: 2px 2px 2px 2px;
+    padding: 0px;
+    margin: 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.image {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bbf58a6-1e85-4cfe-83fd-02df6f482b45/de8nlib-6bed7b3d-3d7e-4763-bb60-18f5ee0127fd.png/v1/fill/w_1024,h_652,q_80,strp/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUyIiwicGF0aCI6IlwvZlwvNWJiZjU4YTYtMWU4NS00Y2ZlLTgzZmQtMDJkZjZmNDgyYjQ1XC9kZThubGliLTZiZWQ3YjNkLTNkN2UtNDc2My1iYjYwLTE4ZjVlZTAxMjdmZC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZVgNGi61AOkC068E-wphWmAUW8amj0MiJySqDcMCVh8);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding: 3px;
+}
+
+img {
+    width: 90%;
+}
+
+.details1 {
+    background-color: green;
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
+}
+
+.details2 {
+    background-color: rgb(187, 74, 33);
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
+}
+
+.details3 {
+    background-color: purple;
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
+}
+
+.details4 {
+    background-color: rgb(58, 50, 58);
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
+}
+
+.details5 {
+    background-color: rgb(197, 24, 24);
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
+}
+
+.name {
+    color: aliceblue;
+    ;
+    text-shadow: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.types {
+    text-align: center;
+    padding: 10px;
+}
+
+.grass {
+    background-color: rgb(22, 203, 22);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.poison {
+    background-color: darkorchid;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.rock {
+    background-color: rgb(173, 128, 15);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.ghost {
+    background-color: rgb(71, 11, 104);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.normal {
+    background-color: rgb(106, 106, 117);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.fire {
+    background-color: red;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.fighting {
+    background-color: rgb(253, 219, 23);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.ground {
+    background-color: rgb(107, 61, 31);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.flying{
+    background-color: rgb(30, 97, 126);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.add:hover{
+    background-color: rgb(205, 205, 255);
+}
+
+.release:hover{
+    background-color: rgb(255, 183, 186);
+}
+
+.add {
+    background-color: rgb(135, 135, 228);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.release {
+    background-color: rgb(228, 135, 140);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+p {
+    display: inline-block;
+
+}
