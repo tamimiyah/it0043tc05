@@ -188,3 +188,8 @@ p {
     display: inline-block;
 
 }
+
+.desc{
+    text-align: left;
+    padding: 10px;
+}
