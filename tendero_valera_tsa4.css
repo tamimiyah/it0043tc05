@@ -164,14 +164,6 @@ img {
     padding: 20px;
 }
 
-.add:hover{
-    background-color: rgb(88, 88, 252);
-}
-
-.release:hover{
-    background-color: rgb(251, 66, 72);
-}
-
 .add {
     background-color: rgb(135, 135, 228);
     border-radius: 5px;
@@ -182,6 +174,14 @@ img {
     background-color: rgb(228, 135, 140);
     border-radius: 5px;
     padding: 15px;
+}
+
+.add:hover{
+    background-color: rgb(88, 88, 252);
+}
+
+.release:hover{
+    background-color: rgb(251, 66, 72);
 }
 
 p {
