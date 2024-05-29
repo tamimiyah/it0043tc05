@@ -176,7 +176,7 @@ img {
     }
 
     .box:hover {
-        background-image: url(/bgmove.webp);
+        background-image: url(bgmove.webp);
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
