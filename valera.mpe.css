@@ -14,7 +14,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2rem;
     -webkit-text-fill-color: aliceblue;
 
 }
@@ -24,15 +24,16 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    gap: 20px;
+    gap: 2rem;
 
 }
 
 .box {
-    width: 360px;
+    width: 20rem;
     justify-items: center;
     align-items: center;
     justify-items: space-around;
+    border-radius: 1rem;
 
 }
 
@@ -41,20 +42,22 @@ img {
     aspect-ratio: 1/1;
 }
 
-.text{
+.text {
     display: none;
-    font-size: 800px;
-}  
+    font-size: 10vw;
+    text-shadow: 0.5rem 0.5rem 0.5rem;
+}
 
-.pokemon{
+.pokemon {
     display: none;
 }
 
-
-
+.types {
+    display: none;
+}
 
 #pikachu {
-    background-color: yellow;
+    background-color: rgb(222, 222, 44);
 }
 
 #jigglypuff {
@@ -78,7 +81,7 @@ img {
 }
 
 #mankey {
-    background-color: antiquewhite;
+    background-color: rgb(244, 216, 179);
 }
 
 #eevee {
@@ -101,9 +104,51 @@ img {
     background-color: rgb(245, 243, 118);
 }
 
+#electric {
+    background-color: rgb(247, 208, 44);
+}
+
+#normal {
+    background-color: rgb(184, 184, 176);
+}
+
+#fairy {
+    background-color: lightpink;
+}
+
+#dark {
+    background-color: rgb(128, 90, 90);
+}
+
+#steel {
+    background-color: lightgrey;
+}
+
+#water{
+    background-color: rgb(115, 115, 249);
+}
+
+#fighting{
+    background-color: orange;
+}
+
+#bug{
+    background-color: rgb(185, 240, 140);
+}
+
+#poison{
+    background-color: rgb(191, 62, 191);
+}
+
+#flying{
+    background-color: lightblue;
+}
 @media all and (max-width: 1136px) {
+
     .container {
         flex-direction: column;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
     }
 
     .box {
@@ -116,9 +161,10 @@ img {
 
     img {
         width: 20%;
-        text-align: left;
+        text-align: center;
     }
-    .text{
+
+    .text {
         display: flex;
         font-size: 6vw;
         justify-self: center;
@@ -130,24 +176,62 @@ img {
     }
 
     .box:hover {
-        background-image: url(/bg2.jpg);
+        background-image: url(/bgmove.webp);
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
-        transition-delay: 10s;
-    }
-@media all and (max-width:670px){
-    .pokemon{
-        display: none;
+        transition-delay: 2s;
     }
 
-    .box{
-        flex-direction: column;
-    }
+    @media all and (max-width:670px) {
 
-    .container{
-        display:flex;
-        flex-direction: column;
+        body {
+            transition-delay: 2s, initial, inherit;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 100%;
+            flex-direction: column;
+            aspect-ratio: 1/1;
+            gap: 0.3rem;
+            padding: 0.3rem;
+        }
+
+        img {
+            width: 45%;
+        }
+
+        .text {
+            font-size: 8vw;
+        }
+
+        .pokemon {
+            display: none;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+        .types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            width: 25rem;
+            border-radius: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            color: beige;
+            text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
+                -3px 0px 7px rgba(81, 67, 21, 0.8),
+                0px 4px 7px rgba(81, 67, 21, 0.8);
+        }
     }
-}
 }
