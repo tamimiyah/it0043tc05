@@ -1,153 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
-    border: 0;
-    padding: 0;
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
     box-sizing: border-box;
     font-family: 'Chakra Petch';
 }
 
 body {
-    background-image: url(Pokemon\ Wallpaper.png);
-    background-size: cover;
+    background-image: url("7941359.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    text-align: center;
-    margin-top: 20px;
+    background-size: cover;
     -webkit-text-fill-color: aliceblue;
-
+    text-align: center;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-
+    margin: 2vw 3vw 2vw 3vw;
+    vertical-align: top;
 }
 
-.box {
-    width: 360px;
-    justify-items: center;
-    align-items: center;
-    justify-items: space-around;
+.card1 {
+    width: 25vw;
+    border: 2px solid rgb(5, 5, 5);
+    box-shadow: 2px 2px 2px 2px;
+    padding: 0px;
+    margin: 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
 
+.image {
+    background-image: url(bg2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding: 3px;
 }
 
 img {
-    width: 60%;
+    width: 90%;
     aspect-ratio: 1/1;
 }
 
-.text{
-    display: none;
-    font-size: 800px;
-}  
+.details1 {
+    background-color: green;
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
 
-.pokemon{
-    display: none;
 }
 
+.details2 {
+    background-color: rgb(187, 74, 33);
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
 
-
-
-#pikachu {
-    background-color: yellow;
 }
 
-#jigglypuff {
-    background-color: fuchsia;
+.details3 {
+    background-color: purple;
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
 }
 
-#meowth {
-    background-color: rgb(236, 218, 162);
+.details4 {
+    background-color: rgb(58, 50, 58);
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
 }
 
-#psyduck {
-    background-color: rgb(244, 205, 67);
+.details5 {
+    background-color: rgb(197, 24, 24);
+    text-align: left;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+
 }
 
-#snorlax {
-    background-color: rgb(67, 67, 249);
+.name {
+    color: aliceblue;
+    text-shadow: 2px 2px 2px 2px;
+    text-align: center;
 }
 
-#rattata {
-    background-color: rgb(206, 67, 249);
+.types {
+    text-align: center;
+    padding: 10px;
 }
 
-#mankey {
-    background-color: antiquewhite;
+.grass {
+    background-color: rgb(22, 203, 22);
+    border-radius: 2px;
+    padding: 6px;
 }
 
-#eevee {
-    background-color: rgb(247, 202, 148);
+.poison {
+    background-color: darkorchid;
+    border-radius: 2px;
+    padding: 6px;
 }
 
-#squirtle {
-    background-color: rgb(67, 249, 249);
+.rock {
+    background-color: rgb(173, 128, 15);
+    border-radius: 2px;
+    padding: 6px;
 }
 
-#venonat {
-    background-color: rgb(155, 69, 236);
+.ghost {
+    background-color: rgb(71, 11, 104);
+    border-radius: 2px;
+    padding: 6px;
 }
 
-#zubat {
-    background-color: rgb(86, 107, 214);
+.normal {
+    background-color: rgb(106, 106, 117);
+    border-radius: 2px;
+    padding: 6px;
 }
 
-#pidgey {
-    background-color: rgb(245, 243, 118);
+.fire {
+    background-color: red;
+    border-radius: 2px;
+    padding: 6px;
 }
 
-@media all and (max-width: 1136px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .box {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    img {
-        width: 20%;
-        text-align: left;
-    }
-    .text{
-        display: flex;
-        font-size: 6vw;
-        justify-self: center;
-    }
-
-    .pokemon {
-        display: flex;
-        width: 10%;
-    }
-
-    .box:hover {
-        background-image: url(/bg2.jpg);
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        transition-delay: 10s;
-    }
-@media all and (max-width:670px){
-    .pokemon{
-        display: none;
-    }
-
-    .box{
-        flex-direction: column;
-    }
-
-    .container{
-        display:flex;
-        flex-direction: column;
-    }
+.fighting {
+    background-color: rgb(253, 219, 23);
+    border-radius: 2px;
+    padding: 6px;
 }
+
+.ground {
+    background-color: rgb(107, 61, 31);
+    border-radius: 2px;
+    padding: 6px;
+}
+
+.flying{
+    background-color: rgb(30, 97, 126);
+    border-radius: 2px;
+    padding: 6px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.add {
+    background-color: rgb(135, 135, 228);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.release {
+    background-color: rgb(228, 135, 140);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.add:hover{
+    background-color: rgb(88, 88, 252);
+}
+
+.release:hover{
+    background-color: rgb(251, 66, 72);
+}
+
+p {
+    display: inline-block;
+
+}
+
+.desc{
+    text-align: left;
+    padding: 10px;
 }
