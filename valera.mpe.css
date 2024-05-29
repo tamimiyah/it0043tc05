@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     margin-top: 20px;
+    -webkit-text-fill-color: aliceblue;
 
 }
 
@@ -42,6 +43,7 @@ img {
 
 .text{
     display: none;
+    font-size: 800px;
 }  
 
 .pokemon{
@@ -118,13 +120,13 @@ img {
     }
     .text{
         display: flex;
-        font-size: larger;
+        font-size: 6vw;
         justify-self: center;
     }
 
     .pokemon {
         display: flex;
-        width: 20%;
+        width: 10%;
     }
 
     .box:hover {
