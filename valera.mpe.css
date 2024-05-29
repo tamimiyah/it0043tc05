@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch';
+}
+
+body {
+    background-image: url(Pokemon\ Wallpaper.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.box {
+    width: 360px;
+    justify-items: center;
+    align-items: center;
+    justify-items: space-around;
+
+}
+
+img {
+    width: 60%;
+    aspect-ratio: 1/1;
+}
+
+.text{
+    display: none;
+}  
+
+.pokemon{
+    display: none;
+}
+
+
+
+
+#pikachu {
+    background-color: yellow;
+}
+
+#jigglypuff {
+    background-color: fuchsia;
+}
+
+#meowth {
+    background-color: rgb(236, 218, 162);
+}
+
+#psyduck {
+    background-color: rgb(244, 205, 67);
+}
+
+#snorlax {
+    background-color: rgb(67, 67, 249);
+}
+
+#rattata {
+    background-color: rgb(206, 67, 249);
+}
+
+#mankey {
+    background-color: antiquewhite;
+}
+
+#eevee {
+    background-color: rgb(247, 202, 148);
+}
+
+#squirtle {
+    background-color: rgb(67, 249, 249);
+}
+
+#venonat {
+    background-color: rgb(155, 69, 236);
+}
+
+#zubat {
+    background-color: rgb(86, 107, 214);
+}
+
+#pidgey {
+    background-color: rgb(245, 243, 118);
+}
+
+@media all and (max-width: 1136px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    img {
+        width: 20%;
+        text-align: left;
+    }
+    .text{
+        display: flex;
+        font-size: larger;
+        justify-self: center;
+    }
+
+    .pokemon {
+        display: flex;
+        width: 20%;
+    }
+
+    .box:hover {
+        background-image: url(/bg2.jpg);
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        transition-delay: 10s;
+    }
+@media all and (max-width:670px){
+    .pokemon{
+        display: none;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+}
+}
