@@ -45,7 +45,8 @@ img {
 .text {
     display: none;
     font-size: 10vw;
-    text-shadow: 0.5rem 0.5rem 0.5rem;
+    text-shadow: 3px 3px 20px #1a1517,
+    -2px 1px 30px #1a1517;
 }
 
 .pokemon {
@@ -176,7 +177,7 @@ img {
     }
 
     .box:hover {
-        background-image: url(bgmove.webp);
+        background-image: url(bgmove.gif);
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
