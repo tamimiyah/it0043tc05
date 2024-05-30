@@ -9,17 +9,16 @@
 }
 
 body {
+    text-align: center;
+    margin-top: 2rem;
+    -webkit-text-fill-color: aliceblue;
+}
+
+.container {
     background-image: url(Pokemon\ Wallpaper.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    text-align: center;
-    margin-top: 2rem;
-    -webkit-text-fill-color: aliceblue;
-
-}
-
-.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -46,7 +45,7 @@ img {
     display: none;
     font-size: 10vw;
     text-shadow: 3px 3px 20px #1a1517,
-    -2px 1px 30px #1a1517;
+        -2px 1px 30px #1a1517;
 }
 
 .pokemon {
@@ -125,31 +124,37 @@ img {
     background-color: lightgrey;
 }
 
-#water{
+#water {
     background-color: rgb(115, 115, 249);
 }
 
-#fighting{
+#fighting {
     background-color: orange;
 }
 
-#bug{
+#bug {
     background-color: rgb(185, 240, 140);
 }
 
-#poison{
+#poison {
     background-color: rgb(191, 62, 191);
 }
 
-#flying{
+#flying {
     background-color: lightblue;
 }
+
 @media all and (max-width: 1136px) {
+    body {
+        -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+        -webkit-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+        -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+        -o-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+        transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    }
 
     .container {
         flex-direction: column;
-        transition-timing-function: ease-in-out;
-        transition-delay: 1s;
     }
 
     .box {
@@ -181,14 +186,9 @@ img {
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
-        transition-delay: 2s;
     }
 
     @media all and (max-width:670px) {
-
-        body {
-            transition-delay: 2s, initial, inherit;
-        }
 
         .container {
             display: flex;
