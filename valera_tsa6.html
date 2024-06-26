@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valera TSA6 - CSS Flexbox Simulator</title>
+    <link rel="stylesheet" href="valera_tsa6.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h1>CSS Flexbox Simulator</h1>
+
+        <button class="button" onclick="reset()">Reset Flexbox</button>
+
+        <div class="itemGap">
+            <div class="text"> Gap</div>
+            <div>
+                <input type="number" id="gap" oninput="gap(this.value)" min="0">
+            </div>
+        </div>
+
+        <div class="flexDirection">
+            <div class="text"> Flex Direction</div>
+            <div class="flexButs">
+                <div class="flexButs-Row">
+                    <button class="button" onclick="flexDir('row')">Row</button>
+                </div>
+                <div>
+                    <button class="button" id="flexButs-Column" onclick="flexDir('column')">Column</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="justifyContent">
+            <div class="text">Justify Content</div>
+            <div>
+                <select onchange="justifyContent(this.value)">
+                    <option value="start">Start</option>
+                    <option value="center">Center</option>
+                    <option value="end">End</option>
+                    <option value="space-between">Space Between</option>
+                    <option value="space-around">Space Around</option>
+                    <option value="space-evenly">Space Evenly</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="alignItems">
+            <div class="text">Align Items</div>
+            <div>
+                <select onchange="alignItems(this.value)">
+                    <option value="start">Start</option>
+                    <option value="center">Center</option>
+                    <option value="end">End</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="flexGrow">
+            <div class="text"> Flex Grow</div>
+
+            <div class="growButs">
+                <button class="reset-button" onclick="resetFlexGrow()">Reset</button>
+                <button class="grow-all-button" onclick="growAll()">Grow All</button>
+            </div>
+        </div>
+
+
+        <div class="box1-grow">
+            <p>Box 1</p>
+            <input type="number" id="box1-Grow" onchange="flexGrow(this.value, 'box1')" min="0" max="5">
+        </div>
+
+        <div class="box2-grow">
+            <p>Box 2</p>
+            <input type="number" id="box2-Grow" onchange="flexGrow(this.value, 'box2')" min="0" max="5">
+        </div>
+
+        <div class="box3-grow">
+            <p>Box 3</p>
+            <input type="number" id="box3-Grow" onchange="flexGrow(this.value, 'box3')" min="0" max="5">
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="flex-container">
+        <div class="box" id="box1">
+            1
+        </div>
+
+        <div class="box" id="box2">
+            2
+        </div>
+        <div class="box" id="box3">
+            3
+        </div>
+
+    </div>
+
+
+
+    <script src="valera_tsa6.js"></script>
+
+</body>
+
+</html>
