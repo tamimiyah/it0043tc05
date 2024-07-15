@@ -41,77 +41,153 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    /* justify-content: space-between; */
     background-color: #987185;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 
-    .logo-name {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        color: #E4E5E0;
-        font-weight: 100;
+.nav-container .logo-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: #E4E5E0;
+    font-weight: 100;
+}
 
-        .logo {
-            height: 5rem;
-            object-position: left;
-            padding: 10px;
-        }
+.nav-container .logo-name .logo {
+    height: 5rem;
+    object-position: left;
+    padding: 10px;
+}
+
+.nav-container .menu-toggle,
+.nav-container input {
+    display: none;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-container ul li {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    background-image: linear-gradient(to right,
+            #423736,
+            #423736 50%,
+            #E4E5E0 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-container ul li a:before {
+    content: '';
+    background: #423736;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-container ul li a:hover {
+    background-position: 0;
+}
+
+.nav-container ul li a:hover::before {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 1125px) {
+    .menu-icon {
+        display: grid;
+        place-items: center;
+        grid-column: auto;
+        font-size: 2rem;
+        color: #F4E2D1;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 1em;
     }
 
-    ul {
+    li {
+        display: none;
+        width: 0;
+    }
+
+    #menuToggle:checked~ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.5rem;
-        padding: 0;
-        list-style: none;
+        flex-direction: column;
+        z-index: 1000;
+        position: absolute;
+    }
 
-        li {
-            text-decoration: none;
-            padding: 20px;
-        }
-
-        li a {
-            text-decoration: none;
-            background-image: linear-gradient(to right,
-                    #423736,
-                    #423736 50%,
-                    #E4E5E0 50%);
-            background-size: 200% 100%;
-            background-position: -100%;
-            display: inline-block;
-            padding: 5px 0;
-            position: relative;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 0.3s ease-in-out;
-        }
-
-        li a:before {
-            content: '';
-            background: #423736;
-            display: block;
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        li a:hover {
-            background-position: 0;
-        }
-
-        li a:hover::before {
-            width: 100%;
-        }
+    #menuToggle:checked~ul>li {
+        display: block;
+        padding: 0.4em 1em;
+        width: 100%;
+    }
 
 
+    .menu {
+        display: inline;
+        position: relative;
+        top: 4.5rem;
+        right: 0;
+        background: #987185;
+        z-index: 1;
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        transition: all 0.4s ease-in-out;
+        margin: 1em;
+    }
+
+    #menuToggle:checked~.menu {
+        max-height: 50vh;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: block;
+        padding: 2em;
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    h1 {
+        display: none;
     }
 }
 
@@ -206,10 +282,6 @@ section {
     color: #423736;
 
 }
-
-/* #homediv:hover {
-    opacity: 0.5;
-} */
 
 .title {
     padding-left: 1em;
