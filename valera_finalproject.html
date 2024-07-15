@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamiyah Valera's Digital Portfolio</title>
     <link rel="stylesheet" href="valera_finalproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav>
+    <nav class="menu--left" role="navigation">
         <div class="nav-container">
             <div class="logo-name">
                 <img src="Logo.png" alt="" class="logo">
                 <h1>Tamiyah Valera</h1>
             </div>
-
-            <ul class="nav-menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
                 <li><a id="sec-1" href="#Home">Home</a></li>
                 <li><a id="sec-2" href="#About">About</a></li>
                 <li><a id="sec-3" href="#Portfolio">Portfolio</a></li>
